@@ -1,0 +1,8 @@
+<Modules>
+  <Module PersistentId="B019ECC6-A945-4D6B-9BD3-1C8429F41D6F" ModuleId="DDD.Exemplopuro.Domain" />
+  <Module PersistentId="9D0A612F-B4F3-4B61-9F6D-19DF7F2C87C4" ModuleId="DDD.ExemploPuro.Framework" />
+  <Module PersistentId="35E737E5-AA51-4F41-8E4B-6977E591C819" ModuleId="DDD.Exemplopuro.Testes" />
+  <Module PersistentId="EE26C129-A249-4EF6-8628-BF11E902A803" ModuleId="DDD.ExemploPuro.UI" />
+  <Module PersistentId="78FAF65B-662B-4F87-833E-CAFA3FC48D28" ModuleId="DDD.ExemploPuro.Controller" />
+  <Module PersistentId="CCCCD5C9-C520-4C2A-999F-11F36B6EDBE4" ModuleId="DDD.Exemplopuro.InfraStructure" />
+</Modules>

@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B019ECC6-A945-4D6B-9BD3-1C8429F41D6F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DDD.Exemplopuro.Domain</RootNamespace>
+    <AssemblyName>DDD.Exemplopuro.Domain</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Castle.Core">
+      <HintPath>..\Biblioteca\Castle.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="FluentNHibernate">
+      <HintPath>..\Biblioteca\FluentNHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="Iesi.Collections">
+      <HintPath>..\Biblioteca\Iesi.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\Biblioteca\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate">
+      <HintPath>..\Biblioteca\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate.ByteCode.Castle">
+      <HintPath>..\Biblioteca\NHibernate.ByteCode.Castle.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate.LambdaExtensions">
+      <HintPath>..\Biblioteca\NHibernate.LambdaExtensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Spring.Core">
+      <HintPath>..\Biblioteca\Spring.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DB\EspecificacoesDeAcesso\EspecificacaoFiltraPatrocinadoresPorContrato.cs" />
+    <Compile Include="DB\EspecificacoesDeAcesso\EspecificacaoFiltrarContratosAtivos.cs" />
+    <Compile Include="DB\EspecificacoesDeAcesso\EspecificacaoPesquisaPatrociniosDeUmJogador.cs" />
+    <Compile Include="DB\EspecificacoesDeAcesso\EspecificacaoFiltrarContratosPorPatrocinado.cs" />
+    <Compile Include="DB\EspecificacoesDeBanco\AndEspecificacao.cs" />
+    <Compile Include="DB\EspecificacoesDeBanco\Especificacao.cs" />
+    <Compile Include="DB\EspecificacoesDeBanco\ICriterioEspecificacao.cs" />
+    <Compile Include="DB\Mappings\Entidades\ContratoMap.cs" />
+    <Compile Include="DB\Mappings\Entidades\ContratoPatrocinioMap.cs" />
+    <Compile Include="DB\Mappings\Entidades\CreditoPatrocinadorMap.cs" />
+    <Compile Include="DB\Mappings\Entidades\JogadorMap.cs" />
+    <Compile Include="DB\Mappings\Entidades\PatrocinadoMap.cs" />
+    <Compile Include="DB\Mappings\Entidades\PatrocinadorMap.cs" />
+    <Compile Include="DB\Mappings\Entidades\TimeMap.cs" />
+    <Compile Include="DB\Mappings\ValueObjects\TipoCreditoMap.cs" />
+    <Compile Include="DB\Mappings\ValueObjects\ValueObjectMap.cs" />
+    <Compile Include="DB\Repositorio\Contratos.cs" />
+    <Compile Include="DB\Repositorio\Patrocinadores.cs" />
+    <Compile Include="DB\Repositorio\Tipos.cs" />
+    <Compile Include="Patrocinados\Contrato.cs" />
+    <Compile Include="Patrocinados\JogadorSoDeveTerUmNoMaximoUmContratoAtivoSpecification.cs" />
+    <Compile Include="Patrocinio\ContratoPatrocinio.cs" />
+    <Compile Include="Patrocinados\Patrocinado.cs" />
+    <Compile Include="Patrocinio\Patrocinador.cs" />
+    <Compile Include="Patrocinados\Jogador.cs" />
+    <Compile Include="Patrocinados\Time.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Patrocinio\CreditoPatrocinador.cs" />
+    <Compile Include="Patrocinio\TipoCredito.cs" />
+    <Compile Include="DB\Repositorio\BaseRepository.cs" />
+    <Compile Include="DB\Repositorio\Patrocinados.cs" />
+    <Compile Include="Servico\ServicoObtemInformacoesJogador.cs" />
+    <Compile Include="Servico\ServicoObtemInformacoesTime.cs" />
+    <Compile Include="Servico\ServicoObtermInformacoesPatrocinados.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\DDD.ExemploPuro.Framework\DDD.ExemploPuro.Framework.csproj">
+      <Project>{9D0A612F-B4F3-4B61-9F6D-19DF7F2C87C4}</Project>
+      <Name>DDD.ExemploPuro.Framework</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

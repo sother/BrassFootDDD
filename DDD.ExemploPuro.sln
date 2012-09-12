@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DDD.Exemplopuro.Domain", "DDD.Exemplopuro.Domain\DDD.Exemplopuro.Domain.csproj", "{B019ECC6-A945-4D6B-9BD3-1C8429F41D6F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DDD.ExemploPuro.Framework", "DDD.ExemploPuro.Framework\DDD.ExemploPuro.Framework.csproj", "{9D0A612F-B4F3-4B61-9F6D-19DF7F2C87C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DDD.Exemplopuro.Testes", "DDD.Exemplopuro.Testes\DDD.Exemplopuro.Testes.csproj", "{35E737E5-AA51-4F41-8E4B-6977E591C819}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{2193B1D1-5F38-43F2-B801-D63A98618898}"
+	ProjectSection(SolutionItems) = preProject
+		DDD.ExemploPuro.vsmdi = DDD.ExemploPuro.vsmdi
+		Local.testsettings = Local.testsettings
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DDD.Exemplopuro.InfraStructure", "DDD.Exemplopuro.InfraStructure\DDD.Exemplopuro.InfraStructure.csproj", "{CCCCD5C9-C520-4C2A-999F-11F36B6EDBE4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DDD.ExemploPuro.UI", "DDD.ExemploPuro.UI\DDD.ExemploPuro.UI.csproj", "{EE26C129-A249-4EF6-8628-BF11E902A803}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DDD.ExemploPuro.Controller", "DDD.ExemploPuro.Controller\DDD.ExemploPuro.Controller.csproj", "{78FAF65B-662B-4F87-833E-CAFA3FC48D28}"
+EndProject
+Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = DDD.ExemploPuro.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B019ECC6-A945-4D6B-9BD3-1C8429F41D6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B019ECC6-A945-4D6B-9BD3-1C8429F41D6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B019ECC6-A945-4D6B-9BD3-1C8429F41D6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B019ECC6-A945-4D6B-9BD3-1C8429F41D6F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D0A612F-B4F3-4B61-9F6D-19DF7F2C87C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D0A612F-B4F3-4B61-9F6D-19DF7F2C87C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D0A612F-B4F3-4B61-9F6D-19DF7F2C87C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D0A612F-B4F3-4B61-9F6D-19DF7F2C87C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35E737E5-AA51-4F41-8E4B-6977E591C819}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35E737E5-AA51-4F41-8E4B-6977E591C819}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35E737E5-AA51-4F41-8E4B-6977E591C819}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35E737E5-AA51-4F41-8E4B-6977E591C819}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CCCCD5C9-C520-4C2A-999F-11F36B6EDBE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCCCD5C9-C520-4C2A-999F-11F36B6EDBE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCCCD5C9-C520-4C2A-999F-11F36B6EDBE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCCCD5C9-C520-4C2A-999F-11F36B6EDBE4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE26C129-A249-4EF6-8628-BF11E902A803}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE26C129-A249-4EF6-8628-BF11E902A803}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE26C129-A249-4EF6-8628-BF11E902A803}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE26C129-A249-4EF6-8628-BF11E902A803}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78FAF65B-662B-4F87-833E-CAFA3FC48D28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78FAF65B-662B-4F87-833E-CAFA3FC48D28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78FAF65B-662B-4F87-833E-CAFA3FC48D28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78FAF65B-662B-4F87-833E-CAFA3FC48D28}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
