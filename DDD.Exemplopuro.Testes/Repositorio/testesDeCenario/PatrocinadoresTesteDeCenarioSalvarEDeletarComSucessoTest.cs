@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using DDD.Exemplopuro.Testes.InfraStructure;
 using NUnit.Framework;
 using DDD.Exemplopuro.Domain.Repositorio;
 using DDD.Exemplopuro.Domain;
@@ -10,7 +11,7 @@ using DDD.Exemplopuro.Domain.Comercial;
 namespace DDD.Exemplopuro.Testes.Repositorio
 {
     [TestFixture]
-    public class PatrocinadoresTesteDeCenarioSalvarEDeletarComSucessoTest : TesteBase
+    public class PatrocinadoresTesteDeCenarioSalvarEDeletarComSucessoTest : PersistenceTestBase
     {
         public Patrocinadores Patrocinadores { get; set; }
         public Patrocinador Patrocinador { get; set; }
@@ -22,10 +23,9 @@ namespace DDD.Exemplopuro.Testes.Repositorio
         }
 
         [TearDown]
-        protected override void TearDown()
+        protected void TearDown()
         {
             excluir_patrocinador_com_sucesso();
-            base.TearDown();
         }
 
         private void excluir_patrocinador_com_sucesso()
@@ -36,6 +36,7 @@ namespace DDD.Exemplopuro.Testes.Repositorio
         private void criar_patrocinador_com_sucesso()
         {
             Patrocinadores = new Patrocinadores();
+            Patrocinadores.InformarSession(base.Session);
             Patrocinador = new Patrocinador("adidas");
             Patrocinadores.Salvar(Patrocinador);
         }

@@ -12,8 +12,6 @@ namespace DDD.Exemplopuro.Domain.Comercial
     {
         private int id;
         private string nome;
-       // private ICollection<ContratoPatrocinio> patrocinados;
-
 
         public virtual int Id
         {

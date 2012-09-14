@@ -5,11 +5,12 @@ using System.Text;
 using NUnit.Framework;
 using DDD.Exemplopuro.Domain.Repositorio;
 using DDD.Exemplopuro.Domain;
+using DDD.Exemplopuro.Testes.InfraStructure;
 
 namespace DDD.Exemplopuro.Testes.Repositorio
 {
     [TestFixture]
-    public class PatrocinadosTesteDeCenarioSalvarEDeletarComSucessoTest : TesteBase
+    public class PatrocinadosTesteDeCenarioSalvarEDeletarComSucessoTest : PersistenceTestBase
     {
         public Patrocinados Patrocinados { get; set; }
         public Patrocinado Patrocinado { get; set; }
@@ -21,10 +22,9 @@ namespace DDD.Exemplopuro.Testes.Repositorio
         }
 
         [TearDown]
-        protected override void  TearDown()
+        protected void  TearDown()
         {
             excluir_time_com_sucesso();
-            base.TearDown();
         }
 
         private void excluir_time_com_sucesso()
@@ -35,6 +35,7 @@ namespace DDD.Exemplopuro.Testes.Repositorio
         private void criar_time_com_sucesso()
         {
             Patrocinados = new Patrocinados();
+            Patrocinados.InformarSession(base.Session);
             Patrocinado = new Time("barcelona");
             Patrocinados.Salvar(Patrocinado);
         }

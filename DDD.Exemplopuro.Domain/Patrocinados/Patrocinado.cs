@@ -125,10 +125,15 @@ namespace DDD.Exemplopuro.Domain
         public abstract IList<Patrocinado> ObterTimes();
         public abstract IList<Patrocinado> ObterJogadores();
         public abstract void ContratarJogador(Patrocinado jogadorr);
-        public  abstract bool TemVinculo();
+        public abstract bool TemVinculo();
 
         //TODO VER PQ ESTA PUBLIC
-        public abstract void ResindirContrato(Contrato contrato);        
+        public abstract void ResindirContrato(Contrato contrato);
+
+        public virtual void ResindirTodosOsContratos()
+        {
+            this.Contratos.RemoveAll(x => x.Id > 0);
+        }
 
         public virtual bool SaldoPositivo()
         {

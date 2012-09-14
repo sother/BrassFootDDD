@@ -103,13 +103,12 @@
     <Compile Include="Framework\AssertionTest.cs" />
     <Compile Include="Framework\ValueObjectTest.cs" />
     <Compile Include="InfraStructure\CreateDataBaseTest.cs" />
+    <Compile Include="InfraStructure\DataSession.cs" />
+    <Compile Include="InfraStructure\PersistenceTestBase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Domain\Patrocinados\TimeTest.cs" />
-    <Compile Include="Repositorio\PatrocinadoresTest.cs" />
-    <Compile Include="Repositorio\PatrocinadosTest.cs" />
     <Compile Include="Repositorio\testesDeCenario\PatrocinadoresTesteDeCenarioSalvarEDeletarComSucessoTest.cs" />
     <Compile Include="Repositorio\testesDeCenario\PatrocinadosTesteDeCenarioSalvarEDeletarComSucessoTest.cs" />
-    <Compile Include="TesteBase.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DDD.Exemplopuro.Domain\DDD.Exemplopuro.Domain.csproj">

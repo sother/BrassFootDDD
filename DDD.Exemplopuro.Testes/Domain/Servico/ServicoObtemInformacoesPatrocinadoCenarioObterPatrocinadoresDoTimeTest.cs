@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using DDD.Exemplopuro.Testes.InfraStructure;
 using NUnit.Framework;
 using DDD.Exemplopuro.Domain;
 using DDD.Exemplopuro.Domain.Comercial;
@@ -11,7 +12,7 @@ using DDD.Exemplopuro.Domain.Servico;
 namespace DDD.Exemplopuro.Testes.Domain.Servico
 {
     [TestFixture]
-    public class ServicoObtemInformacoesPatrocinadoCenarioObterPatrocinadoresDoTimeTest : TesteBase
+    public class ServicoObtemInformacoesPatrocinadoCenarioObterPatrocinadoresDoTimeTest : PersistenceTestBase
     {
 
         Patrocinado Patrocinado { get; set; }
@@ -20,11 +21,13 @@ namespace DDD.Exemplopuro.Testes.Domain.Servico
         Patrocinadores Patrocinadores { get; set; }
         IEnumerable<Patrocinador> PatrocinadoresObtidos { get; set; }
 
-        protected override void SetUp()
+        [SetUp]
+        protected void SetUp()
         {
-            base.SetUp();
             Patrocinadores = new Patrocinadores();
+            Patrocinadores.InformarSession(base.Session);
             Patrocinados = new Patrocinados();
+            Patrocinados.InformarSession(base.Session);
             criar_time();
             criar_patrocinador();
             criar_contrato_patrocinio();
@@ -38,7 +41,6 @@ namespace DDD.Exemplopuro.Testes.Domain.Servico
             var contrato = new ContratoPatrocinio(12, 12, 1233, 12, Patrocinado);
             Patrocinador.AdicionarPatrocinado(contrato);
             Patrocinadores.Salvar(Patrocinador);
-
         }
 
         private void criar_patrocinador()
@@ -57,21 +59,18 @@ namespace DDD.Exemplopuro.Testes.Domain.Servico
         public void servico_deve_obter_patrocinadores()
         {
             Assert.NotNull(PatrocinadoresObtidos);
-
         }
 
         [Test]
         public void servico_deve_obter_apenas_um_patrocinador()
         {
             Assert.AreEqual(PatrocinadoresObtidos.Count(), 1);
-
         }
 
         [Test]
         public void servico_deve_obter_apenas_um_patrocinador_com_nome_igual_Adidas()
         {
             Assert.AreEqual(PatrocinadoresObtidos.FirstOrDefault().Nome, "Adidas");
-
         }
     }
 }

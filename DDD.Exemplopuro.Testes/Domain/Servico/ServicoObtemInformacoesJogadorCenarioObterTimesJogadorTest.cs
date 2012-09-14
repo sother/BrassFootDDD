@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using DDD.Exemplopuro.Testes.InfraStructure;
 using NUnit.Framework;
 using DDD.Exemplopuro.Domain;
 using DDD.Exemplopuro.Domain.Servico;
@@ -13,7 +14,7 @@ using System.Reflection;
 namespace DDD.Exemplopuro.Testes.Domain.Servico
 {
     [TestFixture]
-    public class ServicoObtemInformacoesJogadorCenarioObterTimesJogadorTest : TesteBase
+    public class ServicoObtemInformacoesJogadorCenarioObterTimesJogadorTest : PersistenceTestBase
     {
         public Patrocinados Patrocinados { get; set; }
         public Patrocinado Time { get; set; }
@@ -22,12 +23,16 @@ namespace DDD.Exemplopuro.Testes.Domain.Servico
         Patrocinador Patrocinador { get; set; }
         Patrocinadores Patrocinadores { get; set; }
 
+        private ContratoPatrocinio contratojogador;
+        private ContratoPatrocinio contratoTime;
+
         [SetUp]
-        protected override void SetUp()
+        protected void SetUp()
         {
-            base.SetUp();
             Patrocinados = new Patrocinados();
+            Patrocinados.InformarSession(base.Session);
             Patrocinadores = new Patrocinadores();
+            Patrocinadores.InformarSession(base.Session);
             criar_time_com_sucesso();
             criar_jogador_com_sucesso();
             criar_patrocinador_com_sucesso();
@@ -47,8 +52,8 @@ namespace DDD.Exemplopuro.Testes.Domain.Servico
 
         private void criar_contrato_para_jogador_e_time_para_este_patrocinador()
         {
-            var contratojogador = new ContratoPatrocinio(12, 12, 1233, 12, Jogador);
-            var contratoTime = new ContratoPatrocinio(12, 12, 1233, 12, Time);
+            contratojogador = new ContratoPatrocinio(12, 12, 1233, 12, Jogador);
+            contratoTime = new ContratoPatrocinio(12, 12, 1233, 12, Time);
 
             Patrocinador.AdicionarPatrocinado(contratojogador);
             Patrocinador.AdicionarPatrocinado(contratoTime);

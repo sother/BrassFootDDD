@@ -21,6 +21,7 @@ namespace DDD.Exemplopuro.Domain
         public static ISession Session
         {
             get { return _session ?? (_session = FACTORY.OpenSession()); }
+            set { _session = value; }
         }
 
         private static object syncObj = 1;
@@ -57,6 +58,11 @@ namespace DDD.Exemplopuro.Domain
             return Session.Get<T>(id);
         }
 
+        public void InformarSession(ISession session)
+        {
+            Session = session;
+        }
+
         #endregion
 
         #region Métodos de Sessão e Transação
@@ -76,18 +82,13 @@ namespace DDD.Exemplopuro.Domain
         public static ISessionFactory CreateSessionFactory()
         {
             //return Fluently.Configure().Database(MsSqlConfiguration.MsSql2005.ConnectionString(c => c
-            //      .Server(@".\SQLEXPRESS")
+            //      .Server(@"WORKKER01-PC\WORKKER01")
             //      .Database("ExemploPuro")
             //      .TrustedConnection()
-            //    //.Username("sa")
-            //    //.Password("123456")))
             //      )).Mappings(m => m.FluentMappings.AddFromAssemblyOf<TimeMap>())
             //      .BuildSessionFactory();
 
-            return Fluently.Configure().Database(
-                SQLiteConfiguration.Standard
-                .UsingFile("ExemploPuro.db")).Mappings(m => m.FluentMappings.AddFromAssemblyOf<TimeMap>())
-                .BuildSessionFactory();
+            return null;
         }
 
         #endregion

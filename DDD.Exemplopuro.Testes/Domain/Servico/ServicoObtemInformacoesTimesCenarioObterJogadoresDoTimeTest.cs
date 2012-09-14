@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using DDD.Exemplopuro.Testes.InfraStructure;
 using NUnit.Framework;
 using DDD.Exemplopuro.Domain;
 using DDD.Exemplopuro.Domain.Servico;
@@ -13,7 +14,7 @@ using System.Reflection;
 namespace DDD.Exemplopuro.Testes.Domain.Servico
 {
     [TestFixture]
-    public class ServicoObtemInformacoesTimesCenarioObterJogadoresDoTimeTest : TesteBase
+    public class ServicoObtemInformacoesTimesCenarioObterJogadoresDoTimeTest : PersistenceTestBase
     {
         public Patrocinados Patrocinados { get; set; }
         public Patrocinado Time { get; set; }
@@ -23,11 +24,12 @@ namespace DDD.Exemplopuro.Testes.Domain.Servico
         Patrocinadores Patrocinadores { get; set; }
 
         [SetUp]
-        protected override void SetUp()
+        protected void SetUp()
         {
-            base.SetUp();
             Patrocinados = new Patrocinados();
+            Patrocinados.InformarSession(base.Session);
             Patrocinadores = new Patrocinadores();
+            Patrocinadores.InformarSession(base.Session);
             criar_time_com_sucesso();
             criar_jogador_com_sucesso();
             criar_patrocinador_com_sucesso();

@@ -1,38 +1,56 @@
 ﻿<RecentFiles>
   <RecentFiles>
-    <File id="B019ECC6-A945-4D6B-9BD3-1C8429F41D6F/d:DB/d:EspecificacoesDeAcesso/f:EspecificacaoFiltrarContratosAtivos.cs" caret="0" fromTop="0" />
-    <File id="35E737E5-AA51-4F41-8E4B-6977E591C819/d:Domain/d:Patrocinados/f:TimeTest.cs" caret="1655" fromTop="28" />
-    <File id="B019ECC6-A945-4D6B-9BD3-1C8429F41D6F/d:Patrocinados/f:Time.cs" caret="476" fromTop="20" />
-    <File id="B019ECC6-A945-4D6B-9BD3-1C8429F41D6F/d:Patrocinados/f:Patrocinado.cs" caret="910" fromTop="14" />
-    <File id="78FAF65B-662B-4F87-833E-CAFA3FC48D28/f:TimesController.cs" caret="289" fromTop="12" />
-    <File id="EE26C129-A249-4EF6-8628-BF11E902A803/d:paginas/f:ListarTimes.aspx" caret="357" fromTop="5" />
-    <File id="EE26C129-A249-4EF6-8628-BF11E902A803/f:Default.aspx" caret="0" fromTop="0" />
-    <File id="B019ECC6-A945-4D6B-9BD3-1C8429F41D6F/d:DB/d:Repositorio/f:Contratos.cs" caret="0" fromTop="0" />
-    <File id="B019ECC6-A945-4D6B-9BD3-1C8429F41D6F/d:DB/d:Repositorio/f:Patrocinadores.cs" caret="1307" fromTop="18" />
-    <File id="B019ECC6-A945-4D6B-9BD3-1C8429F41D6F/d:DB/d:Repositorio/f:Patrocinados.cs" caret="0" fromTop="0" />
-    <File id="35E737E5-AA51-4F41-8E4B-6977E591C819/d:Domain/d:Patrocinador/d:CreditoPatrocinador/f:CreditoPatrocinadorTest.cs" caret="0" fromTop="0" />
+    <File id="35E737E5-AA51-4F41-8E4B-6977E591C819/d:Repositorio/d:testesDeCenario/f:PatrocinadoresTesteDeCenarioSalvarEDeletarComSucessoTest.cs" caret="827" fromTop="18" />
+    <File id="35E737E5-AA51-4F41-8E4B-6977E591C819/d:InfraStructure/f:DataSession.cs" caret="1132" fromTop="43" />
+    <File id="B019ECC6-A945-4D6B-9BD3-1C8429F41D6F/d:DB/d:Repositorio/f:BaseRepository.cs" caret="2622" fromTop="33" />
+    <File id="35E737E5-AA51-4F41-8E4B-6977E591C819/d:InfraStructure/f:CreateDataBaseTest.cs" caret="245" fromTop="1" />
+    <File id="B019ECC6-A945-4D6B-9BD3-1C8429F41D6F/d:Patrocinados/f:Time.cs" caret="0" fromTop="0" />
+    <File id="B019ECC6-A945-4D6B-9BD3-1C8429F41D6F/d:Patrocinio/f:Patrocinador.cs" caret="0" fromTop="0" />
+    <File id="B019ECC6-A945-4D6B-9BD3-1C8429F41D6F/d:Patrocinados/f:Contrato.cs" caret="0" fromTop="0" />
+    <File id="B019ECC6-A945-4D6B-9BD3-1C8429F41D6F/d:Patrocinados/f:Patrocinado.cs" caret="0" fromTop="0" />
+    <File id="B019ECC6-A945-4D6B-9BD3-1C8429F41D6F/d:DB/d:Mappings/d:Entidades/f:CreditoPatrocinadorMap.cs" caret="0" fromTop="0" />
+    <File id="B019ECC6-A945-4D6B-9BD3-1C8429F41D6F/d:DB/d:Mappings/d:Entidades/f:ContratoPatrocinioMap.cs" caret="0" fromTop="0" />
+    <File id="B019ECC6-A945-4D6B-9BD3-1C8429F41D6F/d:DB/d:Mappings/d:Entidades/f:ContratoMap.cs" caret="0" fromTop="0" />
+    <File id="B019ECC6-A945-4D6B-9BD3-1C8429F41D6F/d:DB/d:Mappings/d:Entidades/f:TimeMap.cs" caret="0" fromTop="0" />
+    <File id="B019ECC6-A945-4D6B-9BD3-1C8429F41D6F/d:DB/d:Mappings/d:Entidades/f:PatrocinadorMap.cs" caret="0" fromTop="0" />
+    <File id="B019ECC6-A945-4D6B-9BD3-1C8429F41D6F/d:DB/d:Mappings/d:Entidades/f:PatrocinadoMap.cs" caret="0" fromTop="0" />
+    <File id="B019ECC6-A945-4D6B-9BD3-1C8429F41D6F/d:DB/d:Mappings/d:Entidades/f:JogadorMap.cs" caret="0" fromTop="0" />
+    <File id="B019ECC6-A945-4D6B-9BD3-1C8429F41D6F/d:Servico/f:ServicoObtermInformacoesPatrocinados.cs" caret="0" fromTop="0" />
+    <File id="B019ECC6-A945-4D6B-9BD3-1C8429F41D6F/d:Servico/f:ServicoObtemInformacoesJogador.cs" caret="0" fromTop="0" />
+    <File id="35E737E5-AA51-4F41-8E4B-6977E591C819/d:Domain/d:Patrocinador/d:CreditoPatrocinador/f:CreditoPatrocinadorConstrutorIniciadoComSucessoTest.cs" caret="0" fromTop="0" />
+    <File id="35E737E5-AA51-4F41-8E4B-6977E591C819/d:Domain/d:Patrocinador/d:ContratoPatrocinio/f:ContratoPatrocinioTest.cs" caret="0" fromTop="0" />
+    <File id="35E737E5-AA51-4F41-8E4B-6977E591C819/d:Domain/d:Patrocinador/d:ContratoPatrocinio/f:ContratoPatrocinioConstrutorIniciadoComSucessoCenarioTest.cs" caret="0" fromTop="0" />
+    <File id="35E737E5-AA51-4F41-8E4B-6977E591C819/d:Domain/d:Patrocinados/f:TimeTest.cs" caret="0" fromTop="0" />
+    <File id="35E737E5-AA51-4F41-8E4B-6977E591C819/d:Domain/d:Patrocinados/f:PatrocinadoTest.cs" caret="0" fromTop="0" />
+    <File id="35E737E5-AA51-4F41-8E4B-6977E591C819/d:Domain/d:Patrocinados/f:JogadorTest.cs" caret="0" fromTop="0" />
+    <File id="35E737E5-AA51-4F41-8E4B-6977E591C819/d:Repositorio/d:testesDeCenario/f:PatrocinadosTesteDeCenarioSalvarEDeletarComSucessoTest.cs" caret="1050" fromTop="33" />
+    <File id="35E737E5-AA51-4F41-8E4B-6977E591C819/d:Domain/d:Servico/f:ServicoObtemInformacoesTimesCenarioObterJogadoresDoTimeTest.cs" caret="3095" fromTop="35" />
+    <File id="35E737E5-AA51-4F41-8E4B-6977E591C819/d:Domain/d:Servico/f:ServicoObtemInformacoesJogadorCenarioObterTimesJogadorTest.cs" caret="881" fromTop="0" />
+    <File id="35E737E5-AA51-4F41-8E4B-6977E591C819/d:Domain/d:Servico/f:ServicoObtemInformacoesPatrocinadoCenarioObterPatrocinadorAtualDoPatrocinadoTest.cs" caret="394" fromTop="14" />
     <File id="35E737E5-AA51-4F41-8E4B-6977E591C819/d:Domain/d:Servico/f:ServicoObtemInformacoesPatrocinadoCenarioObterPatrocinadoresDoJogadorTest.cs" caret="0" fromTop="0" />
-    <File id="35E737E5-AA51-4F41-8E4B-6977E591C819/d:Domain/d:Servico/f:ServicoObtemInformacoesPatrocinadoCenarioObterPatrocinadorAtualDoPatrocinadoTest.cs" caret="0" fromTop="0" />
-    <File id="35E737E5-AA51-4F41-8E4B-6977E591C819/d:Domain/d:Servico/f:ServicoObtemInformacoesPatrocinadoCenarioObterPatrocinadoresDoTimeTest.cs" caret="0" fromTop="0" />
-    <File id="B019ECC6-A945-4D6B-9BD3-1C8429F41D6F/d:DB/d:Repositorio/f:Tipos.cs" caret="0" fromTop="0" />
-    <File id="35E737E5-AA51-4F41-8E4B-6977E591C819/d:Repositorio/f:PatrocinadoresTest.cs" caret="0" fromTop="0" />
-    <File id="35E737E5-AA51-4F41-8E4B-6977E591C819/d:Domain/d:Servico/f:ServicoObtemInformacoesJogadorCenarioObterTimesJogadorTest.cs" caret="823" fromTop="22" />
-    <File id="35E737E5-AA51-4F41-8E4B-6977E591C819/d:Repositorio/d:testesDeCenario/f:PatrocinadosTesteDeCenarioSalvarEDeletarComSucessoTest.cs" caret="332" fromTop="11" />
-    <File id="35E737E5-AA51-4F41-8E4B-6977E591C819/d:Repositorio/f:PatrocinadosTest.cs" caret="177" fromTop="7" />
-    <File id="35E737E5-AA51-4F41-8E4B-6977E591C819/f:TesteBase.cs" caret="418" fromTop="16" />
-    <File id="B019ECC6-A945-4D6B-9BD3-1C8429F41D6F/d:DB/d:Repositorio/f:BaseRepository.cs" caret="362" fromTop="4" />
-    <File id="35E737E5-AA51-4F41-8E4B-6977E591C819/d:Framework/f:AssertionTest.cs" caret="2448" fromTop="0" />
-    <File id="35E737E5-AA51-4F41-8E4B-6977E591C819/d:Framework/f:ValueObjectTest.cs" caret="0" fromTop="0" />
-    <File id="35E737E5-AA51-4F41-8E4B-6977E591C819/d:InfraStructure/f:CreateDataBaseTest.cs" caret="0" fromTop="0" />
-    <File id="35E737E5-AA51-4F41-8E4B-6977E591C819/d:Repositorio/d:testesDeCenario/f:PatrocinadoresTesteDeCenarioSalvarEDeletarComSucessoTest.cs" caret="0" fromTop="0" />
+    <File id="35E737E5-AA51-4F41-8E4B-6977E591C819/d:Domain/d:Servico/f:ServicoObtemInformacoesPatrocinadoCenarioObterPatrocinadoresDoTimeTest.cs" caret="488" fromTop="14" />
+    <File id="35E737E5-AA51-4F41-8E4B-6977E591C819/d:InfraStructure/f:PersistenceTestBase.cs" caret="0" fromTop="0" />
   </RecentFiles>
   <RecentEdits>
-    <File id="B019ECC6-A945-4D6B-9BD3-1C8429F41D6F/d:DB/d:Repositorio/f:BaseRepository.cs" caret="1451" fromTop="41" />
     <File id="35E737E5-AA51-4F41-8E4B-6977E591C819/d:Domain/d:Patrocinados/f:TimeTest.cs" caret="1655" fromTop="28" />
     <File id="EE26C129-A249-4EF6-8628-BF11E902A803/d:paginas/f:ListarTimes.aspx" caret="800" fromTop="5" />
     <File id="78FAF65B-662B-4F87-833E-CAFA3FC48D28/f:TimesController.cs" caret="289" fromTop="12" />
     <File id="B019ECC6-A945-4D6B-9BD3-1C8429F41D6F/d:Patrocinados/f:Time.cs" caret="205" fromTop="9" />
     <File id="B019ECC6-A945-4D6B-9BD3-1C8429F41D6F/d:DB/d:Repositorio/f:Patrocinados.cs" caret="499" fromTop="21" />
     <File id="B019ECC6-A945-4D6B-9BD3-1C8429F41D6F/d:DB/d:Repositorio/f:Patrocinadores.cs" caret="1307" fromTop="21" />
+    <File id="B019ECC6-A945-4D6B-9BD3-1C8429F41D6F/d:DB/d:EspecificacoesDeAcesso/f:EspecificacaoFiltrarContratosPorPatrocinado.cs" caret="1014" fromTop="30" />
+    <File id="35E737E5-AA51-4F41-8E4B-6977E591C819/d:InfraStructure/f:CreateDataBaseTest.cs" caret="280" fromTop="4" />
+    <File id="B019ECC6-A945-4D6B-9BD3-1C8429F41D6F/d:Patrocinio/f:Patrocinador.cs" caret="3982" fromTop="19" />
+    <File id="B019ECC6-A945-4D6B-9BD3-1C8429F41D6F/d:Patrocinados/f:Patrocinado.cs" caret="3600" fromTop="41" />
+    <File id="35E737E5-AA51-4F41-8E4B-6977E591C819/d:InfraStructure/f:PersistenceTestBase.cs" caret="0" fromTop="0" />
+    <File id="35E737E5-AA51-4F41-8E4B-6977E591C819/d:InfraStructure/f:DataSession.cs" caret="1132" fromTop="37" />
+    <File id="35E737E5-AA51-4F41-8E4B-6977E591C819/d:Repositorio/d:testesDeCenario/f:PatrocinadoresTesteDeCenarioSalvarEDeletarComSucessoTest.cs" caret="1137" fromTop="28" />
+    <File id="B019ECC6-A945-4D6B-9BD3-1C8429F41D6F/d:DB/d:Repositorio/f:BaseRepository.cs" caret="2622" fromTop="33" />
+    <File id="35E737E5-AA51-4F41-8E4B-6977E591C819/d:Repositorio/d:testesDeCenario/f:PatrocinadosTesteDeCenarioSalvarEDeletarComSucessoTest.cs" caret="1048" fromTop="33" />
+    <File id="35E737E5-AA51-4F41-8E4B-6977E591C819/d:Domain/d:Servico/f:ServicoObtemInformacoesJogadorCenarioObterTimesJogadorTest.cs" caret="1260" fromTop="34" />
+    <File id="35E737E5-AA51-4F41-8E4B-6977E591C819/d:Domain/d:Servico/f:ServicoObtemInformacoesPatrocinadoCenarioObterPatrocinadorAtualDoPatrocinadoTest.cs" caret="1070" fromTop="21" />
+    <File id="35E737E5-AA51-4F41-8E4B-6977E591C819/d:Domain/d:Servico/f:ServicoObtemInformacoesPatrocinadoCenarioObterPatrocinadoresDoJogadorTest.cs" caret="1051" fromTop="28" />
+    <File id="35E737E5-AA51-4F41-8E4B-6977E591C819/d:Domain/d:Servico/f:ServicoObtemInformacoesPatrocinadoCenarioObterPatrocinadoresDoTimeTest.cs" caret="1050" fromTop="29" />
+    <File id="35E737E5-AA51-4F41-8E4B-6977E591C819/d:Domain/d:Servico/f:ServicoObtemInformacoesTimesCenarioObterJogadoresDoTimeTest.cs" caret="1160" fromTop="28" />
   </RecentEdits>
 </RecentFiles>

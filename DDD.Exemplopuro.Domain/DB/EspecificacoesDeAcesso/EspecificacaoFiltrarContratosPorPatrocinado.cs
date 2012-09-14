@@ -31,7 +31,5 @@ namespace DDD.Exemplopuro.Domain
         {
             return base.Notificar();
         }
-
-
     }
 }
