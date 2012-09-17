@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using DDD.Exemplopuro.Domain.DB.Repositorio;
 using NUnit.Framework;
-using DDD.Exemplopuro.Domain.Repositorio;
 using DDD.Exemplopuro.Domain;
 using DDD.Exemplopuro.Testes.InfraStructure;
 
@@ -34,8 +34,7 @@ namespace DDD.Exemplopuro.Testes.Repositorio
 
         private void criar_time_com_sucesso()
         {
-            Patrocinados = new Patrocinados();
-            Patrocinados.InformarSession(base.Session);
+            Patrocinados = new Patrocinados(base.Session);
             Patrocinado = new Time("barcelona");
             Patrocinados.Salvar(Patrocinado);
         }

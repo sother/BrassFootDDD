@@ -1,13 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using DDD.Exemplopuro.Domain.Comercial;
 using DDD.ExemploPuro.Framework;
+using DDD.Exemplopuro.Domain.Patrocinio;
 using NHibernate.Criterion;
 using NHibernate;
 
-namespace DDD.Exemplopuro.Domain
+namespace DDD.Exemplopuro.Domain.DB.EspecificacoesDeAcesso
 {
     public class EspecificacaoFiltraPatrocinadoresPorContrato : Especificacao<ContratoPatrocinio>
     {
@@ -17,7 +15,6 @@ namespace DDD.Exemplopuro.Domain
         {
             throw new NotImplementedException();
         }
-
 
         public EspecificacaoFiltraPatrocinadoresPorContrato(ICriteria contratos) 
         {

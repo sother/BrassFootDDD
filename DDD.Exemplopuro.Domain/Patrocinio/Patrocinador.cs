@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using DDD.ExemploPuro.Framework;
+using DDD.Exemplopuro.Domain.Patrocinio;
 
 namespace DDD.Exemplopuro.Domain.Comercial
 {

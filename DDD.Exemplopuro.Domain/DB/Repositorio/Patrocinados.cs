@@ -1,12 +1,21 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using System.Collections.Generic;
+using NHibernate;
 
-namespace DDD.Exemplopuro.Domain
+namespace DDD.Exemplopuro.Domain.DB.Repositorio
 {
     public class Patrocinados : BaseRepository
     {
+        public Patrocinados()
+        {
+
+        }
+
+        public Patrocinados(ISession session)
+            : base(session)
+        {
+
+        }
+
         public void Salvar(Patrocinado patrocinado)
         {
             base.Salvar(patrocinado);
@@ -17,7 +26,7 @@ namespace DDD.Exemplopuro.Domain
             return base.Obter<Patrocinado>(id);
         }
 
-        public  IList<Patrocinado> ObterTimes()
+        public IList<Patrocinado> ObterTimes()
         {
             return null;
         }

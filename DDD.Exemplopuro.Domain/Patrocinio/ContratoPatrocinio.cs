@@ -1,10 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using DDD.ExemploPuro.Framework;
 
-namespace DDD.Exemplopuro.Domain.Comercial
+namespace DDD.Exemplopuro.Domain.Patrocinio
 {
     [Serializable]
     public class ContratoPatrocinio : IAggregateRoot<int>
@@ -72,6 +69,7 @@ namespace DDD.Exemplopuro.Domain.Comercial
         public ContratoPatrocinio(int mesesDeContrato, decimal valorBaseBonus, decimal valorBaseSalario, decimal valorBaseDireitoDeImagem, Patrocinado patrocinado)
         {
             #region Pré-Condições
+         
             IAssertion mesesDeContratoInformado = Assertion.GreaterThan(mesesDeContrato, default(int), "Não fora informados meses de contrato.");
             IAssertion valorBaseBonusInformado = Assertion.GreaterThan(valorBaseBonus, default(decimal), "Não foi informado valor base bonûs.");
             IAssertion valorBaseSalarioInformado = Assertion.GreaterThan(valorBaseSalario, default(decimal), "Não foi informado valor base salario.");
@@ -138,7 +136,5 @@ namespace DDD.Exemplopuro.Domain.Comercial
             mesesDeContratoInformado.and(valorBaseBonusInformado).and(valorBaseSalarioInformado).and(valorBaseDireitoDeImagemInformado).and(patrocinadoInformado).Validate();
 
         }
-
-
     }
 }

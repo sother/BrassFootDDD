@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using DDD.ExemploPuro.Framework;
+﻿using DDD.ExemploPuro.Framework;
 using NHibernate.Criterion;
 
-namespace DDD.Exemplopuro.Domain
+namespace DDD.Exemplopuro.Domain.DB.EspecificacoesDeAcesso
 {
     public class EspecificacaoFiltrarContratosPorPatrocinado : EspecificacaoPesquisaPatrociniosDeUmJogador
     {

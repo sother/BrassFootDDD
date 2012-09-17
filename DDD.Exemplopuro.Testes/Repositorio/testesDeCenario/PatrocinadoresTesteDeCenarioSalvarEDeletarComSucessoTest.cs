@@ -1,14 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using DDD.Exemplopuro.Domain.DB.Repositorio;
 using DDD.Exemplopuro.Testes.InfraStructure;
 using NUnit.Framework;
-using DDD.Exemplopuro.Domain.Repositorio;
-using DDD.Exemplopuro.Domain;
 using DDD.Exemplopuro.Domain.Comercial;
 
-namespace DDD.Exemplopuro.Testes.Repositorio
+namespace DDD.Exemplopuro.Testes.Repositorio.testesDeCenario
 {
     [TestFixture]
     public class PatrocinadoresTesteDeCenarioSalvarEDeletarComSucessoTest : PersistenceTestBase
@@ -35,8 +30,7 @@ namespace DDD.Exemplopuro.Testes.Repositorio
 
         private void criar_patrocinador_com_sucesso()
         {
-            Patrocinadores = new Patrocinadores();
-            Patrocinadores.InformarSession(base.Session);
+            Patrocinadores = new Patrocinadores(base.Session);
             Patrocinador = new Patrocinador("adidas");
             Patrocinadores.Salvar(Patrocinador);
         }

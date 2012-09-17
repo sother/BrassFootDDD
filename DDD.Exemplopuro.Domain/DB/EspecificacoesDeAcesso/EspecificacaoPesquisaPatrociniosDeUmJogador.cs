@@ -1,10 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using DDD.ExemploPuro.Framework;
 
-namespace DDD.Exemplopuro.Domain
+namespace DDD.Exemplopuro.Domain.DB.EspecificacoesDeAcesso
 {
     public class EspecificacaoPesquisaPatrociniosDeUmJogador : Especificacao<Patrocinado>
     {

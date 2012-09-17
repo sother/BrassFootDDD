@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using DDD.Exemplopuro.Domain.Patrocinio;
 using NUnit.Framework;
 using DDD.Exemplopuro.Domain.Comercial;
 using DDD.Exemplopuro.Domain;

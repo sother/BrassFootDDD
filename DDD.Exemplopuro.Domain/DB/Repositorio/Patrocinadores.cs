@@ -1,16 +1,27 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using DDD.Exemplopuro.Domain.Comercial;
+using DDD.Exemplopuro.Domain.DB.EspecificacoesDeAcesso;
+using DDD.Exemplopuro.Domain.Patrocinio;
 using NHibernate.Criterion;
 using NHibernate;
 using NHibernate.Transform;
 
-namespace DDD.Exemplopuro.Domain.Repositorio
+namespace DDD.Exemplopuro.Domain.DB.Repositorio
 {
     public class Patrocinadores : BaseRepository
     {
+        public Patrocinadores()
+        {
+
+        }
+
+        public Patrocinadores(ISession session)
+            : base(session)
+        {
+
+        }
+
         public void Salvar(Patrocinador patrocinado)
         {
             base.Salvar(patrocinado);

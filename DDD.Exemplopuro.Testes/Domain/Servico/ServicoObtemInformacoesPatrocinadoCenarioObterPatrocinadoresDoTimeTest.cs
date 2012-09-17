@@ -2,11 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using DDD.Exemplopuro.Domain.DB.Repositorio;
+using DDD.Exemplopuro.Domain.Patrocinio;
 using DDD.Exemplopuro.Testes.InfraStructure;
 using NUnit.Framework;
 using DDD.Exemplopuro.Domain;
 using DDD.Exemplopuro.Domain.Comercial;
-using DDD.Exemplopuro.Domain.Repositorio;
 using DDD.Exemplopuro.Domain.Servico;
 
 namespace DDD.Exemplopuro.Testes.Domain.Servico
@@ -24,10 +25,8 @@ namespace DDD.Exemplopuro.Testes.Domain.Servico
         [SetUp]
         protected void SetUp()
         {
-            Patrocinadores = new Patrocinadores();
-            Patrocinadores.InformarSession(base.Session);
-            Patrocinados = new Patrocinados();
-            Patrocinados.InformarSession(base.Session);
+            Patrocinadores = new Patrocinadores(base.Session);
+            Patrocinados = new Patrocinados(base.Session);
             criar_time();
             criar_patrocinador();
             criar_contrato_patrocinio();
